@@ -1,0 +1,33 @@
+@media screen and (max-width: 992px){
+	.slicknav_menu{
+ 	 display:block ;
+ 	 float: right;
+ 	 padding: 0px;
+ 	 margin-top: 22px;
+    border-radius: 5px;
+    background: #D248E6;
+    color: white;
+	}
+	header nav{
+		display: none;
+	}
+}
+@media screen and (min-width: 200px) and (max-width: 767px) {
+<<<<<<< HEAD
+	#carousel_caption p
+  {
+	  font-size: 12px;
+	  line-height: 12px;
+	  margin: 0px;
+		
+	}
+  }
+=======
+  #carousel_caption p
+{
+    font-size: 12px;
+    line-height: 12px;
+	margin:0px;
+  }
+}
+>>>>>>> 619f3ef53f0075352c8faa4f3bc3b218f698d741

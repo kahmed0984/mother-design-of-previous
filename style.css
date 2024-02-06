@@ -1,0 +1,755 @@
+@font-face {
+  src: url('fonts/georgia/georgia bold italic.ttf');
+  font-family:'georgia bold italic ';
+}
+@font-face {
+  src: url('fonts/georgia/georgia bold.ttf');
+  font-family:'georgia bold' ;
+}
+@font-face {
+  src: url('fonts/georgia/Georgia Regular font.ttf');
+  font-family:'Georgia Regular' ;
+}
+@font-face {
+  src: url('fonts/georgia/GEORGIA4.TTF');
+  font-family:'GEORGIA4' ;
+}
+
+
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: +1000;
+  margin-top: 5px;
+}
+.sticky + .carousel_section {
+  padding-top: 60px;
+}
+/*  slicknav plugin */
+.slicknav_menu{
+  display:none ;
+}
+.material-scrolltop.reveal{
+  z-index: +2;
+}
+.slicknav_menu ul{
+  float: right;
+  text-transform: capitalize;
+}
+.section_padding{
+  padding: 55px 0px;
+}
+body{
+  font-family:'Georgia Regular' ;
+}
+
+/***********************************************************
+************************************************************
+                        Social Icon Start
+************************************************************
+***********************************************************/
+.social_icon{
+  width: 35px;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 14px;
+}
+.social_icon ul{
+  margin: 0px;
+  padding: 0px;
+}
+.social_icon ul li{
+  list-style: none;
+}
+.social_icon ul li a i{
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  padding: 10px;
+  background: #D248E6;
+  color: #FFF;
+}
+.social_icon ul li a i:hover{
+    width: 120px;
+    transition: .3s;
+}
+.social_icon ul li:nth-child(1) i{
+    border-top-right-radius: 10px;
+}
+.social_icon ul li:nth-child(2) i{
+    background: green;
+}
+.social_icon ul li:nth-child(3) i{
+    background: pink;
+}
+.social_icon ul li:nth-child(4) i{
+    background: gold;
+    border-bottom-right-radius: 10px;
+}
+.social_icon ul li:nth-child(1) i:hover{
+    color:blue;
+    background:#ff00c0;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 5px 1px gray;
+}
+.social_icon ul li:nth-child(2) i:hover{
+   background:#174e95;
+   color: #f957e7;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+   box-shadow: 0px 0px 5px 1px gray;
+}
+.social_icon ul li:nth-child(3) i:hover{
+   background:#174e95;
+   color: #f957e7;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+   box-shadow: 0px 0px 5px 1px gray;
+}
+.social_icon ul li:nth-child(4) i:hover{
+    color:#ff26a0;
+    background:#00dbff;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 0px 5px 1px gray;
+}
+
+/***********************************************************
+************************************************************
+                        header Icon Start
+************************************************************
+***********************************************************/
+/*
+nel color: #498EE6;
+beguni color:#D248E6;
+*/
+
+.box1{
+  height: 10px;
+  width: 100%;
+  background-color: #D248E6;
+}
+header{
+/*   background: #fff; */
+  color: #498EE6;
+  margin-bottom: 40px;
+}
+.form_serch{
+
+}
+.form_serch input{
+  border-radius:15px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  position: relative;
+  background-color: #498EE6;
+  border-top: none;
+}
+.form_serch i{
+  position: absolute;
+  top: 4px;
+  right: 24px;
+  background: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px;
+}
+.logo{
+  cursor: pointer;
+}
+.logo a{
+  text-decoration: none;
+}
+.logo a:hover{
+  color: #D248E6;
+}
+.logo  h2{
+  font-size:25px;
+  margin:0px;
+  color:#D248E6;
+
+}
+.logo  h2 span{
+  font-size: 40px;
+}
+.logo a h6{
+  font-size: 13px;
+  margin-left: 5px;
+  opacity: .8;
+  margin: 0px;
+}
+/* header nav{
+  display: inline-block;
+  float: right;
+  margin-top: 0px;
+  position: fixed;
+  right: 9%;
+  z-index: +2;
+} */
+header nav ul{
+
+}
+header nav ul li{
+  
+}
+header nav ul li a{
+  text-transform: capitalize;
+  background: white;
+  margin-left: 10px;
+  padding: 5px !important;
+  border-top: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+
+  box-shadow: 0px 0px 8px #D248E6;
+  padding: 0px 6px !important;
+  font-size: 14px;
+  border-radius: 15px;
+  transition: .3s;
+}
+header nav ul li a:hover{
+  color: #D248E6;
+  border-right: 5px solid #D248E6;
+  border-left: 5px solid #D248E6;
+}
+nav .active{
+  color: #D248E6;
+  border-right: 5px solid #D248E6;
+  border-left: 5px solid #D248E6;
+}
+/***********************************************************
+************************************************************
+                        Carousel section Start
+************************************************************
+***********************************************************/
+.carousel_section{
+  background: white;
+  border-top: 2px solid #D248E6;
+  border-bottom: 2px solid #D248E6;
+}
+.carousel_section{
+  
+}
+.carousel_section img{
+  width: 100%;
+  height: auto;
+}
+#carousel_caption{
+  width: 40%;
+  left: auto;
+  background: #ffc0cb3d;
+  right: 0px;
+  bottom: 0px;
+  padding: 15px 25px;
+  opacity: .8;
+  border-top-left-radius: 10px;
+  text-align: left;
+  font-family:'GEORGIA4' ;
+}
+
+.carousel_section .arrow_icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(lime,#FF0086);
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0px 0px 10px 2px white;
+}
+.arrow_icon span{
+  margin: 13px;
+}
+.carousel_section a:hover{
+  transform: scale(1.2,1.2);
+  transition: .3s;
+}
+.carousel_section ul{
+  right: auto;
+  margin: 0px 0px 30px 75px;
+}
+.carousel_section ul li{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background-color: #fff;
+}
+.carousel-indicators .active {
+  opacity: 1;
+  border: 2px solid white;
+  background:  transparent;
+  box-shadow: 0px 0px 5px white;
+}
+/***********************************************************
+************************************************************
+                        Service section Start
+************************************************************
+***********************************************************/
+.service_section{
+  background: white;
+}
+.service_icon{
+
+}
+.service_icon i{
+  font-size: 40px;
+  color:#D248E6;
+  transition:.5s;
+}
+#service_icon i:first-child{
+  transform: rotate(90deg);
+}
+.service_icon i:hover{
+  transform: rotate(5760deg);
+  color: blue;
+}
+.service_discription{
+  text-align: justify;
+}
+.service_discription h3{
+  color:#D248E6 !important;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+.service_discription p{
+  color:#666666;
+  opacity: .8;
+  margin-top: 23px;
+  font-size: 13px;
+}
+/***********************************************************
+************************************************************
+                        Team section Start
+************************************************************
+***********************************************************/
+.team_section{
+  background: #D9D9D7;
+}
+.team_box{
+  box-shadow: 5px 5px 5px 5px #787579;
+  text-align: center;
+  border-radius: 15px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 15px;
+}
+.team_box img{
+  box-shadow: 0px 0px 5px 2px gray;
+  border-radius: 15px;
+  transition: .3Ss;
+}
+.team_box img:hover{
+  filter: grayscale(100%);
+  opacity: 80%;
+}
+.team_box h3{
+  text-transform: uppercase;
+  margin: 15px auto;
+  color:#D248E6 !important;
+  font-size: 20px;
+}
+.team_box p{
+  color:#666666;
+  opacity: .8;
+  font-size: 13px;
+}
+.team_icon i{
+  height: 35px;
+  width: 35px;
+  background:#D248E6;
+  padding: 9px;
+  border-radius: 50%;
+  color: #fff;
+  margin: 2px;
+}
+.team_icon i:hover{
+  background:#fff;
+  color: #D248E6;
+  box-shadow: 0px 0px 5px gray;
+}
+
+/***********************************************************
+************************************************************
+                        default section Start
+************************************************************
+***********************************************************/
+.default_section{
+  background-image: url('images/bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+.default_top{
+  
+}
+.default_top h2{
+  text-transform: uppercase;
+  margin: 20px auto;
+}
+.default_content{
+  
+}
+.default_content p{
+  text-align: justify;
+  opacity: .7;
+}
+.default_video{
+  margin-top: 70px;
+  margin-bottom:10px;
+}
+.default_video video{
+  box-shadow: 0px 0px 16px 10px white;
+  border-radius: 41px;
+  border: 10px solid #bdbdbd;
+  padding: 5px;
+  background: black;
+}
+
+/** Without bootstap modal **/
+.default_box1{
+  background-image: url('images/portfolio1.jpg');
+}
+.default_box2{
+  background-image: url('images/portfolio2.jpg');
+}
+.default_box3{
+  background-image: url('images/portfolio3.jpg');
+}
+.default_box4{
+  background-image: url('images/portfolio4.jpg');
+}
+.default_box i{
+  margin-top: 40%;
+  font-size: 24px;
+  color: white;
+}
+.default_box{
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 230px;
+  margin-bottom: 30px;
+  text-align: center;
+  &:hover .default_box_hover{
+    display: block;
+  }
+}
+.default_box_hover{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  display: none;
+    &:after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      opacity: .5;
+      left: 0px;
+      top: 0px;
+      background: #000;
+      z-index: -1;
+  }
+}
+/** END Without bootstap modal **/
+
+.box{
+  width: ;
+  height: auto;
+  border-top: 0px solid transparent;
+  border-bottom: 50px solid #BDBDBD;
+
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-radius: 30px;
+  box-shadow: 0px -35px 10px 9px pink;
+}
+
+/***********************************************************
+************************************************************
+                        Footer section Start
+************************************************************
+***********************************************************/
+footer{
+  background: white;
+  font-family:'Georgia Regular' ;
+  text-align: justify;
+}
+.footer_box h5{
+  color: #D248E6;
+  margin-bottom: 35px;
+}
+.footer_box p,.footer_box address{
+  color: #666666;
+  opacity: .8;
+}
+.footer_box1{
+
+}
+.footer_box2 ul{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.footer_box2 ul li{
+  border: 1px solid transparent;
+  border-bottom: 1px solid #D248E6;
+  padding: 2px;
+  border-top: none;
+}
+.footer_box2 ul li:hover{
+    color:#D248E6;
+    border:1px solid #D248E6;
+    border-right: 5px solid #D248E6;
+    border-top: none;
+}
+.footer_box2 ul li:nth-child(1){
+    border-top: 1px solid transparent;
+}
+.footer_box2 ul li:nth-child(1):hover{
+    border-top: 1px solid #D248E6;
+}
+.footer_box2 ul li a{
+  color:#D248E6 ;
+  text-decoration: none;
+}
+.footer_box2 ul li a:hover{
+  color:#0069D9;
+}
+.footer_box3 h6{
+    color: #771c9d;
+    font-style: italic;
+    font-weight: bold;
+}
+.footer_box3 a{
+    float: right;
+    color: #D260EE;
+    text-decoration: none;
+}
+.footer_box3 a:hover{
+    color: #0069D9;
+}
+.footer_box4 label{
+  color: #D248E6;
+}
+/*
+form input[type="submit"]{
+    background: #D248E6;
+    color: white;
+    transition: .3s;
+    font-weight: bold;
+}
+form input[type="submit"]:hover{
+    background: #881399;
+    color: white;
+}
+*/
+.footer_box4 input:focus{
+    box-shadow: 0 0 0 .2rem #D248E678;
+}
+.footer_box4 button{
+  background: #D248E6;
+    color: white;
+    transition: .3s;
+    font-weight: bold;
+    width: 100%;
+}
+.footer_box4 button:hover{
+  background: #881399;
+    color: white;
+}
+
+/***********************************************************
+************************************************************
+                        end section Start
+************************************************************
+***********************************************************/
+.end_section{
+    background: #fd4265;
+    height: 70px;
+}
+.end_para{
+    width: 100%;
+}
+.end_para p{
+    color:white;
+    font-size: 15px;
+    margin-top: 24px;
+}
+.end_para1{
+    float: left;
+}
+.end_para2{
+    float: right;
+}
+/*end section end*/
+
+
+.material-scrolltop:focus{
+    outline: none;
+}
+.material-scrolltop i{
+    color:white;
+}
+
+
+/***********************************************************
+************************************************************
+                        jquery section Start
+************************************************************
+***********************************************************/
+.jquery_section{
+  background: #fd4265;
+  color: #fff;
+  overflow: hidden;
+/*  background-image: url('images/bg2.jpg');
+  background-position: center;
+  background-size: cover; */
+}
+/*  parallax at fist link, div add, js add,then this  */
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+}
+.jquery_section h2{
+  text-transform: uppercase;
+  font-weight:  bold;
+  text-align: center;
+}
+.jquery_box{
+  height: auto;
+  width: 100%;
+  margin: 30px auto;
+  box-shadow: 0px 0px 24px 2px white;
+  padding: 22px;
+  border-radius: 5px;
+  text-align: center;
+}
+.jquery_box h3{
+  background: #fd4265;
+  color: #FFF;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.jquery_box1 p{
+  padding: 5px;
+  text-align: justify;
+}
+.jquery_box2_photo{
+  background-image: url('images/team1.jpg');
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 265px;
+}
+.jquery_box2_pho{
+  display: none;
+}
+.circle1{
+  float: left;
+}
+
+/***********************************************************
+************************************************************
+                        owl-carousel_section Start
+************************************************************
+***********************************************************/
+.owl_carousel_section{
+/*   width: 100%;
+  height: auto; */
+}
+.owl_carousel_section img{
+  width: 100%;
+  height: auto;
+}
+.owl-nav .owl-prev{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 90px;
+  transform: translate(-50%, -50%);
+  background: #FD4265 !important;
+  border-radius: 50%;
+  color: #fff !important;
+  text-align: center;
+  border: 2px solid white !important;
+  box-shadow: 0px 0px 5px 2px white;
+}
+.owl-nav .owl-next{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  right: 90px;
+  transform: translate(-50%);
+  background: #FD4265 !important;
+  border-radius: 50%;
+  color: #fff !important;
+  text-align: center;
+  border: 2px solid white !important;
+  box-shadow: 0px 0px 5px 2px white;
+}
+.owl-nav i{
+  font-size: 35px;
+}
+.owl-nav button:focus{
+  outline: none;
+}
+.owl-dots{
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.owl-dots button{
+  width: 25px;
+  height: 25px;
+  background: transparent !important;
+  border-radius: 50%;
+  margin: 5px;
+  border: 2px solid #fff !important;
+  box-shadow: 0px 0px 5px 2px #FD4265;
+}
+.owl-dots .active{
+  background: #FD4265 !important;
+}
+
+/***********************************************************
+************************************************************
+                        other section Start
+************************************************************
+***********************************************************/
+.other_section{
+  background: linear-gradient(to top,#ff3b5e,white);
+}
+.other_section img{
+  width: 100%;
+  margin-top: 10px;
+}
+.other_section1 {
+  text-align: center;
+  overflow: hidden;
+  padding: 10px 0px;
+  background: linear-gradient(to right,blue,green,yellow,red,orange,pink,purple);
+}
+.other_section1 h4 {
+  margin: 0px;
+  color: white;
+  cursor: no-drop;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+
+
