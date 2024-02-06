@@ -18,6 +18,15 @@
 
 
 
+.gallery_section img{
+  height: 250px;
+  width: 250px;
+  margin-bottom: 40px;
+  
+
+}
+
+
 .sticky {
   position: fixed;
   top: 0;
