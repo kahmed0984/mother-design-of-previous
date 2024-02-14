@@ -738,8 +738,21 @@ form input[type="submit"]:hover{
                         other section Start
 ************************************************************
 ***********************************************************/
+#map{
+  width:100%;
+  height:450px; 
+  border:0;
+  display: block;
+  /* allowfullscreen: ;
+  loading:lazy;
+  referrerpolicy:no-referrer-when-downgrade; */
+}
+
+
+
+
 .other_section{
-  background: linear-gradient(to top,#ff3b5e,white);
+  background: linear-gradient(to top,#ff3b5e 10%,#F1F3F4 );
 }
 .other_section img{
   width: 100%;

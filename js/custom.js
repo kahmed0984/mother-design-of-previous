@@ -6,6 +6,8 @@
 // 	});
 // });
 
+
+// sticky navbar code
 $(document).ready(function(){
 	window.onscroll = function() {myFunction()};
 
@@ -60,8 +62,8 @@ $(document).ready(function(){
 
 
 
-///////-----Jquery Plagin Here-----///////
-///////-----Jquery Plagin Here-----///////
+/*----------Jquery Plagin Here-----------
+------------Jquery Plagin Here----------*/
 
 $(document).ready(function(){
 	// jquery plugin scrolltotop code
