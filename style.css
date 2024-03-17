@@ -23,9 +23,7 @@
   width: 250px;
   margin-bottom: 40px;
   border-radius: 5px;
-  box-shadow: 0px 0px 5px 2px red;
-  border: 2px solid red;
-  padding: 7px;
+  box-shadow: 6px 6px 12px #828282,-6px -6px 12px #e8e8e8;
   
 
 }
@@ -56,6 +54,7 @@
   padding: 55px 0px;
 }
 body{
+  cursor: url("images/cursor/pointer.png") , auto;
   font-family:'Georgia Regular' ;
 }
 .mfp-img{
@@ -535,7 +534,7 @@ header nav ul li:hover .sub_nav {
 }
 /** END Without bootstap modal **/
 
-.box{
+.default_video .box{
   width: ;
   height: auto;
   border-top: 0px solid transparent;
@@ -547,15 +546,87 @@ header nav ul li:hover .sub_nav {
   box-shadow: 0px -35px 10px 9px pink;
 }
 
+
+
+
 /***********************************************************
 ************************************************************
                         Footer section Start
 ************************************************************
 ***********************************************************/
+
+
+/* csss animation pracite */
+footer .box{
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 5px 2px #ff6060,-2px -2px 5px 2px #6bceff;
+  margin:20px auto;
+  animation-name: changeBG;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  transition: .3s;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &:hover{
+    animation: none;
+  }
+}
+@keyframes changeBG {
+  0% {
+    background: white;
+    transform: scale(1) translate(0px, -200px);
+  }
+  12.5% {
+    background: pink;
+    transform: scale(1) translate(600px, -200px);
+  }
+  25% {
+    background: yellow;
+    transform: scale(1) translate(600px, -25px);
+  }
+  37.5% {
+    background: green;
+    transform: scale(1) translate(600px, 148px);
+  }
+  50% {
+    background: orange;
+    transform: scale(1) translate(-0px, 148px);
+  }
+  62.5% {
+    background: violet;
+    transform: scale(1) translate(-650px, 148px);
+  }
+  75% {
+    background: red;
+    transform: scale(1.0) translate(-650px, -25px);
+  }
+  87.5% {
+    background: blue;
+    transform: scale(1) translate(-650px, -200px);
+  }
+  100% {
+    background: gray;
+    transform: scale(1.0) translate(0px, -200px);
+  }
+}
+/* animation section end */
+
+
+
+
+
+
 footer{
   background: white;
   font-family:'Georgia Regular' ;
   text-align: justify;
+  position: relative;
 }
 .footer_box h5{
   color: #D248E6;
@@ -784,6 +855,7 @@ form input[type="submit"]:hover{
   background: #fd4265;
   color: #fff;
   overflow: hidden;
+  padding: 100px 0px;
 /*  background-image: url('images/bg2.jpg');
   background-position: center;
   background-size: cover; */
@@ -795,8 +867,32 @@ form input[type="submit"]:hover{
 }
 .jquery_section h2{
   text-transform: uppercase;
-  font-weight:  bold;
+  font-weight:  900;
   text-align: center;
+  margin-bottom: 50px;
+  font-size: 40px;
+  position: relative;
+  color: #fff;
+  animation-delay: 600ms; /* for wow js */
+  &:before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background: #45B2EC;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+    color: rgba(255, 255, 255, 0.25);
+    z-index: -1;
+  }
 }
 .jquery_box{
   height: auto;
@@ -954,7 +1050,7 @@ form input[type="submit"]:hover{
 .add img{
   width: 100%;
   border-radius: 5px;
-  box-shadow: 0px 0px 5px 2px red;
+  box-shadow: 6px 6px 12px #828282,-6px -6px 12px #e8e8e8;
 }
 .add a{
   color: white;
