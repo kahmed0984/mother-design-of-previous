@@ -1,0 +1,39 @@
+/*************                                 *************
+**************                                 *************
+**************          gallery page Start     *************
+**************                                 *************
+**************                                 ************/
+.gallery_filter_btn{
+  display: inline-block;
+  margin: 30px auto;
+}
+.gallery_filter_btn a{
+  text-decoration: none;
+  padding: 8px 30px;
+  margin-left: 10px;
+  color: #64a8ff;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  box-shadow: 6px 6px 5px #6aacff inset, 5px 5px 5px #8c8c8c21;
+  transition: .3s;
+}
+.gallery_filter_btn a:hover{
+   background: #e6edff;
+}
+.mixitup-control-active{
+  background: #d8e3ff;
+  color: #3c64ff !important;
+}
+
+
+
+.gallery_section .gallery_filter_contant .mix a img{
+  height: 250px;
+  width: 250px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  box-shadow: 6px 6px 12px #828282,-6px -6px 12px #e8e8e8;
+}
+.mfp-img{
+  height: 500px !important;
+}

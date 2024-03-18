@@ -18,15 +18,7 @@
 
 
 
-.gallery_section img{
-  height: 250px;
-  width: 250px;
-  margin-bottom: 40px;
-  border-radius: 5px;
-  box-shadow: 6px 6px 12px #828282,-6px -6px 12px #e8e8e8;
-  
 
-}
 
 
 .sticky {
@@ -56,9 +48,6 @@
 body{
   cursor: url("images/cursor/pointer.png") , auto;
   font-family:'Georgia Regular' ;
-}
-.mfp-img{
-  height: 500px !important;
 }
 
 /***********************************************************
@@ -1039,6 +1028,11 @@ form input[type="submit"]:hover{
 
 
 
+/*************                                 *************
+**************                                 *************
+**************          jquery  page Start     *************
+**************                                 *************
+**************                                 ************/
 /* add section start */
 .add{
   width: 555px;
@@ -1064,6 +1058,16 @@ form input[type="submit"]:hover{
 .add:hover a{
   display: block;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
