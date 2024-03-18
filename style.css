@@ -139,7 +139,7 @@ beguni color:#D248E6;
 header{
 /*   background: #fff; */
   color: #498EE6;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .form_serch{
 
@@ -230,6 +230,7 @@ header nav ul li a{
   font-size: 14px;
   border-radius: 15px;
   transition: .3s;
+  margin-bottom: 20px;
 }
 header nav ul li a:hover{
   color: #D248E6;
@@ -246,7 +247,7 @@ nav .active{
 /* sub nav it */
 .sub_nav{
   position: absolute;
-  top: 33px;
+  top: 55px;
   left: 999999px;
 }
 .sub_nav ul{
@@ -269,10 +270,24 @@ header nav ul li:hover .sub_nav {
 
 
 /* sub nav it */
+.sub_nav:before{
+content: '';
+  position: absolute;
+  top: -20px;
+  left: 33%;
+  z-index: 4;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 20px solid #eee;
+}
 .sub_nav ul li{
   position: relative;
   &:hover .sub_nav2{
       left: -170px;
+  }
+  a{
+    margin-bottom: 0px;
+    background: #eee;
   }
 }
 .sub_nav2{
