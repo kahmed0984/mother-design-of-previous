@@ -558,8 +558,6 @@ content: '';
                         Footer section Start
 ************************************************************
 ***********************************************************/
-
-
 /* csss animation pracite */
 footer .box{
   height: 50px;
@@ -567,11 +565,14 @@ footer .box{
   border-radius: 30px;
   box-shadow: 2px 2px 5px 2px #ff6060,-2px -2px 5px 2px #6bceff;
   margin:20px auto;
-  animation-name: changeBG;
+  animation: changeBG 5s linear 2s infinite alternate forwards;
+  /* animation-name: changeBG;
   animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
   animation-iteration-count: infinite;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation-fill-mode: forwards; */
   transition: .3s;
   position: absolute;
   top: 45%;
@@ -581,6 +582,11 @@ footer .box{
     animation: none;
   }
 }
+
+/* @keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
+} */
 @keyframes changeBG {
   0% {
     background: white;
