@@ -18,15 +18,7 @@
 
 
 
-.gallery_section img{
-  height: 250px;
-  width: 250px;
-  margin-bottom: 40px;
-  border-radius: 5px;
-  box-shadow: 6px 6px 12px #828282,-6px -6px 12px #e8e8e8;
-  
 
-}
 
 
 .sticky {
@@ -56,9 +48,6 @@
 body{
   cursor: url("images/cursor/pointer.png") , auto;
   font-family:'Georgia Regular' ;
-}
-.mfp-img{
-  height: 500px !important;
 }
 
 /***********************************************************
@@ -150,7 +139,7 @@ beguni color:#D248E6;
 header{
 /*   background: #fff; */
   color: #498EE6;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .form_serch{
 
@@ -241,6 +230,7 @@ header nav ul li a{
   font-size: 14px;
   border-radius: 15px;
   transition: .3s;
+  margin-bottom: 20px;
 }
 header nav ul li a:hover{
   color: #D248E6;
@@ -257,7 +247,7 @@ nav .active{
 /* sub nav it */
 .sub_nav{
   position: absolute;
-  top: 33px;
+  top: 55px;
   left: 999999px;
 }
 .sub_nav ul{
@@ -280,10 +270,24 @@ header nav ul li:hover .sub_nav {
 
 
 /* sub nav it */
+.sub_nav:before{
+content: '';
+  position: absolute;
+  top: -20px;
+  left: 33%;
+  z-index: 4;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 20px solid #eee;
+}
 .sub_nav ul li{
   position: relative;
   &:hover .sub_nav2{
       left: -170px;
+  }
+  a{
+    margin-bottom: 0px;
+    background: #eee;
   }
 }
 .sub_nav2{
@@ -554,8 +558,6 @@ header nav ul li:hover .sub_nav {
                         Footer section Start
 ************************************************************
 ***********************************************************/
-
-
 /* csss animation pracite */
 footer .box{
   height: 50px;
@@ -563,11 +565,14 @@ footer .box{
   border-radius: 30px;
   box-shadow: 2px 2px 5px 2px #ff6060,-2px -2px 5px 2px #6bceff;
   margin:20px auto;
-  animation-name: changeBG;
+  animation: changeBG 5s linear 2s infinite alternate forwards;
+  /* animation-name: changeBG;
   animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
   animation-iteration-count: infinite;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation-fill-mode: forwards; */
   transition: .3s;
   position: absolute;
   top: 45%;
@@ -577,6 +582,11 @@ footer .box{
     animation: none;
   }
 }
+
+/* @keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
+} */
 @keyframes changeBG {
   0% {
     background: white;
@@ -1039,6 +1049,11 @@ form input[type="submit"]:hover{
 
 
 
+/*************                                 *************
+**************                                 *************
+**************          jquery  page Start     *************
+**************                                 *************
+**************                                 ************/
 /* add section start */
 .add{
   width: 555px;
@@ -1064,6 +1079,16 @@ form input[type="submit"]:hover{
 .add:hover a{
   display: block;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 

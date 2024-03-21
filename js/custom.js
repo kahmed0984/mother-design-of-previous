@@ -137,10 +137,21 @@ $(document).ready(function(){
   		],
   	});
 
+  	// mixitup jquery code
+  	var mixer = mixitup(".gallery_filter_contant", {
+  		animation: {
+	         duration: 700,
+	     },
+  	});
+
+
+
+
+
+
+
+
 
 
 
 });
-
-
-
