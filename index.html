@@ -16,6 +16,7 @@
         <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel="stylesheet">
         <!---------   fontawesome please   ----------->
         <link rel="stylesheet" href="fonts/Fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="fonts/Themify/themify-icons.css">
         
         <!----------------plagin start---------------------->
         <!-- Material ScrollTop stylesheet -->
@@ -88,9 +89,20 @@
                                 <li class="nav-item"><a class="nav-link" href="#">more &#x203A;</a>
                                     <div class="sub_nav">
                                         <ul>
-                                            <li><a href="jquery.html">Section</a></li>
-                                            <li><a href="jquery practice.html">JS practic</a></li>
-                                            <li><a href="#">Photos  &#x203A;</a>
+                                            <li>
+                                                <div class="sub_nav_hvr"></div>
+                                                <a href="jquery.html">Section</a>
+                                                <div class="sub_nav_hvr2"></div>
+                                            </li>
+                                            <li>
+                                                <div class="sub_nav_hvr"></div>
+                                                <a href="jquery practice.html">JS practic</a>
+                                                <div class="sub_nav_hvr2"></div>
+                                            </li>
+                                            <li>
+                                                <div class="sub_nav_hvr"></div>
+                                                <a href="#">Photos  &#x203A;</a>
+                                                <div class="sub_nav_hvr2"></div>
                                                 <div class="sub_nav2">
                                                     <ul>
                                                         <li><a href="gallery.html">Gallery</a></li>
@@ -199,9 +211,17 @@
         <div class="service_section section_padding" id="scrollspy2">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-12 text-center p-1">
+                        <h1 class="text-center text-success text">Service Section</h1>
+                        <button class="btn btn-primary m-1" id="service_one">Hide</button>
+                        <button class="btn btn-primary m-1" id="service_tow">Show</button>
+                        <button class="btn btn-primary m-1" id="service_three">Toggle</button>
+                    </div>
+                </div>
+                <div id="service_contant_three" class="row ">
+                    <div class="col-lg-4" id="service_contant_one" >
                         <div class="row">
-                            <div class="col-sm-3">
+                            <div class="col-sm-3 " >
                                 <div id="service_icon" class="service_icon">
                                     <i class="fa-solid fa-tree"></i>
                                 </div>
@@ -214,7 +234,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4" >
                         <div class="row">
                             <div class="col-sm-3">
                                 <div class="service_icon">
@@ -229,7 +249,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4" >
                         <div class="row">
                             <div class="col-sm-3">
                                 <div class="service_icon">

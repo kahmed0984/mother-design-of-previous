@@ -179,7 +179,7 @@ header{
   margin:0px;
   color:#D248E6;
   animation: animate 5s ease-in-out infinite;
-  
+  display: inline-block;
 
 }
 @keyframes animate {
@@ -254,14 +254,15 @@ nav .active{
 }
 .sub_nav ul li{
   list-style: none;
-  width: 150px;
+  width: 130px;
 }
 .sub_nav ul li a{
   border-radius: 0px;
   box-shadow: none;
   text-decoration: none;
-  width: 130px;
   display: inline-block;
+  margin: 0px;
+  width: 100%;
 }
 header nav ul li:hover .sub_nav {
   left: -35px;
@@ -275,7 +276,7 @@ content: '';
   position: absolute;
   top: -20px;
   left: 33%;
-  z-index: 4;
+  z-index: 5;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   border-bottom: 20px solid #eee;
@@ -288,12 +289,39 @@ content: '';
   a{
     margin-bottom: 0px;
     background: #eee;
+    position: relative;
   }
 }
 .sub_nav2{
   position: absolute;
   top: 0px;
   left: 999999px;
+}
+
+
+
+/* for border line animation */
+.sub_nav_hvr , .sub_nav_hvr2{
+  height: 2px;
+  width: 0%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 10;transition: width .3s linear .3s, background .4s ease-in-out .0s;
+}
+.sub_nav_hvr2{
+  height: 2px;
+  width: 0%;
+  position: absolute;
+  top: auto;
+  bottom: 0px;
+}
+.sub_nav ul li:hover .sub_nav_hvr,
+.sub_nav ul li:hover .sub_nav_hvr2,
+.sub_nav ul li.active .sub_nav_hvr,
+.sub_nav ul li.active .sub_nav_hvr2{
+  width: 100%;
+  background: #D248E6;
 }
 
 
